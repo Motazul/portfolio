@@ -1,0 +1,26 @@
+/* .CircularProgressbar-path {
+stroke: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(122,59,110,1) 35%, rgba(102,53,189,1) 100%) !important;
+} */
+
+@keyframes load {
+    0% {
+      stroke-dashoffset: 0;
+    }
+  }
+  .CircularProgressbar-path  {
+    stroke: red !important;
+  }
+  .CircularProgressbar  svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+  }
+  .CircularProgressbar-path {
+    fill: none;
+    stroke-width: 25;
+    stroke-dasharray: 629;
+    stroke: #fff !important;
+    opacity: 0.9;
+    animation: load 10s;
+  }

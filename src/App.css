@@ -306,11 +306,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #19161b;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  
 }
 .skill h2 {
 	font-size: 45px;
@@ -326,7 +327,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-slider {
   width: 80%;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
+  /* background-color: blue; */
+  padding: 10px;
+  align-items: center;
+  display: flex;
+
 }
 .skill-slider .item img {
   width: 50%;
@@ -415,10 +421,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 22px;
   overflow: hidden;
   margin-bottom: 24px;
 }
+.proj-imgbx a { text-decoration: none; color: unset; } 
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
