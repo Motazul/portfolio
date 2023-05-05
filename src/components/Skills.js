@@ -32,20 +32,41 @@ export const Skills = () => {
     },
     {
       skill: "Web development",
-      value: 75
+      value: 80
     },
     {
       skill: "HTML",
-      value: 85
+      value: 75
     },
     {
       skill: "CSS",
-      value: 55
+      value: 80
     },
     {
-      skill: "JS",
-      value: 35
+      skill: "JavaScript",
+      value: 40
+    },
+
+    {
+      skill: "Golang",
+      value: 15
+    },
+
+    {
+      skill: "React js",
+      value: 80
+    },
+
+    {
+      skill: "React Native",
+      value: 20
+    },
+
+    {
+      skill: "MongoDB",
+      value: 15
     }
+
   ]
 
   return (
@@ -73,16 +94,19 @@ export const Skills = () => {
 
 const SkillPercentageCircle = ({ value = 10, skill = "English" }) => {
   return (
-    <div style={{ width: 148, height: 148, /* backgroundColor: 'red'  */ }}>
-      {/* <p>{skill}</p> */}
-      <CircleProgress width={148} percentage={value}
-        primaryColor={["red", "blue"]}
-      // styles={buildStyles({
-      //   textSize: '9px',
-      //   // pathColor: 'purple',
-      //   // textColor: 'purple'
-      // })} 
-      />
+    <div className='circle-container' >
+      <div style={{ width: 148, height: 148/* backgroundColor: 'red'  */ }}>
+        {/* <p>{skill}</p> */}
+        <CircleProgress width={148} percentage={value}
+          primaryColor={["red", "blue"]}
+        // styles={buildStyles({
+        //   textSize: '9px',
+        //   // pathColor: 'purple',
+        //   // textColor: 'purple'
+        // })} 
+        />
+      </div>
+      <div className='skills-name'><p>{skill}</p></div>
     </div>
   )
 }

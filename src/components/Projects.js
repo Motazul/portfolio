@@ -1,12 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import images from "../assets/img/projects/index"
-import projImg1 from "../assets/img/forth project.jpg";
-import projImg2 from "../assets/img/second work.jpg";
-import projImg3 from "../assets/img/project1.jpg";
-import projImg4 from "../assets/img/first work.jpg";
-import projImg5 from "../assets/img/fifth work.jpg";
-import projImg6 from "../assets/img/12345.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -24,11 +18,27 @@ export const Projects = () => {
       imgUrl: images.spotifyClone[1],
       link: "https://idyllic-marzipan-75f639.netlify.app/"
     },
+
+    {
+      description: "VideoGame",
+      imgUrl: images.videogame[1],
+      link: "https://frolicking-fairy-b0f498.netlify.app"
+    },
+
     {
       description: "Mokepon",
       imgUrl: images.mokepon[1],
       link: "https://clever-horse-7b0842.netlify.app/"
     },
+    
+    {
+      description: "TrailersPage",
+      imgUrl: images.trailers[1],
+      link: "https://sparkly-dodol-b41329.netlify.app"
+    },
+
+
+
     // {
     //   description: "Design & Development",
     //   imgUrl: projImg4,
@@ -57,12 +67,6 @@ export const Projects = () => {
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
                         <Nav.Link eventKey="first">Web</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Mobile</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Backend</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
