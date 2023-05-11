@@ -80,14 +80,14 @@ export const Skills = () => {
               <Carousel responsive={responsive} infinite className="skill-slider" itemClass='itemm'>
                 {
                   skills.map(
-                    (value) => <SkillPercentageCircle skill={value.skill} value={value.value} />)
+                    (value) => <SkillPercentageCircle key={value.skill} skill={value.skill} value={value.value} />)
                 }
               </Carousel>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="sharp-background" />
     </section>
   )
 }
@@ -95,15 +95,9 @@ export const Skills = () => {
 const SkillPercentageCircle = ({ value = 10, skill = "English" }) => {
   return (
     <div className='circle-container' >
-      <div style={{ width: 148, height: 148/* backgroundColor: 'red'  */ }}>
-        {/* <p>{skill}</p> */}
+      <div style={{ width: 148, height: 148 }}>
         <CircleProgress width={148} percentage={value}
           primaryColor={["red", "blue"]}
-        // styles={buildStyles({
-        //   textSize: '9px',
-        //   // pathColor: 'purple',
-        //   // textColor: 'purple'
-        // })} 
         />
       </div>
       <div className='skills-name'><p>{skill}</p></div>
