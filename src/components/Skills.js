@@ -44,7 +44,7 @@ export const Skills = () => {
     },
     {
       skill: "JavaScript",
-      value: 65 
+      value: 65
     },
 
     {
